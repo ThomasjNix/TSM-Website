@@ -6,21 +6,23 @@
 
 .nav-list {
   &-item {
-    font-size: 2em;
+    font-size: 2.25em;
     list-style-type: none;
-    margin: 2em 0;
-    .active-link {
+    margin: 3em 0;
+    a {
+      color: white;
+      position: relative;
+      right: 0.5em;
+      &::before {
+        content: url('../../assets/icon-star.png');
+        padding: 0 0.5em;
+      }
+    }
+    a.active-link {
       color: red;
       &::before {
         content: url('../../assets/icon-star-inverted.png');
       }
     }   
-    a {
-      color: white;
-      &::before {
-        content: url('../../assets/icon-star.png');
-        padding: 0 1px;
-      }
-    }
   }
 }

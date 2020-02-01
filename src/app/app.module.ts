@@ -17,7 +17,7 @@ const routes = [
     {path: 'media', component: MediaComponent},
     {path: 'booking', component: BookingComponent},
     {path: 'upcoming-shows', component: UpcomingShowsComponent},
-    {path: '**', component: AboutComponent},
+    {path: '**', redirectTo: '/about', pathMatch: 'full'}
 ];
 
 @NgModule({

@@ -19,6 +19,7 @@ export class CommonPageComponent implements OnInit {
   }
   
   getHeaderMapping(urlPath: string) {
+    console.log(urlPath);
     switch (urlPath.toLowerCase()) {
       case 'about':
         return 'about us';

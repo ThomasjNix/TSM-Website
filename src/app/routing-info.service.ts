@@ -11,7 +11,7 @@ export class RoutingInfoService {
   constructor(private router: Router) { 
     this.urlPathObs = this.router.events.pipe(
       filter(event => event instanceof NavigationEnd),
-      map((event: NavigationEnd) => event.url.substr(1, event.url.length))
+      map((event: NavigationEnd) => event.urlAfterRedirects.substr(1, event.urlAfterRedirects.length))
     );
   }
 }

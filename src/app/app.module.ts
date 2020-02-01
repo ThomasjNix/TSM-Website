@@ -9,6 +9,7 @@ import { UpcomingShowsComponent } from './pages/upcoming-shows/upcoming-shows.co
 import { RouterModule } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
+import { AboutSectionComponent } from './pages/about/about-section/about-section.component';
 
 const routes = [
     {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -27,7 +28,8 @@ const routes = [
     MediaComponent,
     BookingComponent,
     UpcomingShowsComponent,
-    CommonPageComponent
+    CommonPageComponent,
+    AboutSectionComponent
   ],
   imports: [
     BrowserModule,

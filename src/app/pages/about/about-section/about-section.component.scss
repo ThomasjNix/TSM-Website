@@ -1,0 +1,19 @@
+.about-section-container {
+  margin: 2em 0;
+  border: 2px solid black;
+  background-color: lightgray;
+  padding: 1em; 
+  .image {
+    img {
+      width: 100%;
+      border: 2px solid blue;
+    }
+  }
+  
+  .descriptions {
+    p {
+      font-style: italic;
+      font-size: 1.5em;  
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.page-header {
+  &-complete {
+    text-decoration: line-through;
+  }
+  &-loading,
+  &-complete {
+    margin: 2em 0;
+    text-align: center;
+  }
+}

@@ -1,3 +1,5 @@
+@import "../../../../resources/_common.scss";
+
 .about-section-container {
   margin: 2em 0;
   border: 2px solid black;
@@ -14,6 +16,29 @@
     p {
       font-style: italic;
       font-size: 1.5em;  
+    }
+  }
+}
+
+@media only screen and (max-width: $xlarge) {
+  .image {
+    margin: 0 auto;
+  }
+  
+  .descriptions {
+    text-align: center;
+    
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+}
+
+@media only screen and (min-width: $xlarge) {
+  .about-section-container {
+    .image {
+      display: flex;
+      align-items: center;
     }
   }
 }

@@ -31,7 +31,7 @@ export class AboutSectionComponent implements OnInit {
   }
   
   allDetailsAvailable(): boolean {
-    return this.name && this.description && this.imageUrl;
+    return this.name !== '' && this.description !== '' && this.imageUrl !== '';
   }
 
 }

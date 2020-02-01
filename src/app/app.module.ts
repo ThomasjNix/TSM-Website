@@ -7,6 +7,7 @@ import { MediaComponent } from './pages/media/media.component';
 import { BookingComponent } from './pages/booking/booking.component';
 import { UpcomingShowsComponent } from './pages/upcoming-shows/upcoming-shows.component';
 import { RouterModule } from '@angular/router';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 const routes = [
     {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -28,6 +29,7 @@ const routes = [
   ],
   imports: [
     BrowserModule,
+    NgbModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],

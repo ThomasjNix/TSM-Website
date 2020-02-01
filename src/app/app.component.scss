@@ -1,0 +1,27 @@
+@import "../resources/_common.scss";
+
+.nav-container {
+    background-color: black;
+    color: white;
+    position: fixed;
+    height: 100%;
+}
+
+.page-content {
+    position: fixed;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+@media only screen and (min-width: $large) and (max-width: $xlarge) {
+    .page-content {
+        left: 25%;
+    }
+}
+
+@media only screen and (min-width: $xlarge){
+    .page-content {
+        left: 16.67%;
+    }
+}

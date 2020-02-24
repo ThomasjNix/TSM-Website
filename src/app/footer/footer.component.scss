@@ -1,0 +1,12 @@
+@import "../../resources/_common.scss";
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  border-top: 2px solid $crimson;
+  background-color: darken($bgblack, 5%);
+  width: 100%;
+  padding: 1em;
+  font-size: 1.5em;
+  text-align: center;
+}

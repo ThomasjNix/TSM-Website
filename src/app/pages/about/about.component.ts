@@ -11,6 +11,11 @@ export class AboutComponent implements OnInit {
 
   ngOnInit() {
     this.aboutSubjects.push('Denee Weathers');
+    
+    // placeholder to test content overflow
+    this.aboutSubjects.push('Denee Weathers');
+    this.aboutSubjects.push('Denee Weathers');
+    this.aboutSubjects.push('Denee Weathers');
   }
 
 }

@@ -1,5 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./resources/_common.scss";
+
 body,
 html {
-  font-size: 16px;
+  background-color: $bgblack;
+  
+  &>* {
+    color: $textgrey;
+    font-size: 16px !important;
+  }
 }

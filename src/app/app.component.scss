@@ -1,34 +1,24 @@
 @import "../resources/_common.scss";
 
-.nav-container {
-    background-color: black;
-    color: white;
-    position: fixed;
-    height: 100%;
-    z-index: 99;
-}
-
 .page-content {
-    position: fixed;
-    height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
+  background-color: $bgblack;
+  padding-bottom: 10em;
+  position: fixed;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  top: 5em;
+  width: 100%;
 }
 
-@media only screen and (max-width: $large) {
-  .application-container {
-    margin: 0 auto;
+@media screen and (max-width: 990px) {
+  .page-content {
+    top: 3em;
   }
 }
 
-@media only screen and (min-width: $large) and (max-width: $xlarge) {
-    .page-content {
-        left: 25%;
-    }
-}
-
-@media only screen and (min-width: $xlarge){
-    .page-content {
-        left: 16.67%;
-    }
+@media screen and (min-width: 990px) and (max-width: $xxlarge) {
+  .page-content {
+    top: 3em;
+  }
 }

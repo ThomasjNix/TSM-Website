@@ -1,8 +1,8 @@
-<div class="row about-section-container" *ngIf="allDetailsAvailable()">
-  <div class="col-xs-4 col-sm-6 col-xl-4 image">
+<div class="row single-about-section" *ngIf="allDetailsAvailable()">
+  <div class="col-xs-4 col-sm-6 col-xl-3 image">
     <img [src]="imageUrl" alt="Image of {{ name }}">
   </div>
-  <div class="col-xs-8 col-xl-8 descriptions">
+  <div class="col-xs-8 col-xl-9 descriptions">
     <h3>{{ name }}</h3>
     <p>{{ description }}</p>
   </div>

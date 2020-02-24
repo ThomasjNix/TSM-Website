@@ -1,3 +1,5 @@
 <h1 class="page-header-complete" *ngIf="header !== ''">{{ header }}</h1>
 <h1 class="page-header-loading" *ngIf="header === ''">Loading...</h1>
-<router-outlet></router-outlet>
+<div class="subpage-content">
+  <router-outlet></router-outlet>  
+</div>

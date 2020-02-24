@@ -6,9 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  mobileNavCollapsed = true;
+  
   constructor() { }
 
   ngOnInit() {
   }
 
+  toggleMobileNavMenu() {
+    this.mobileNavCollapsed = !this.mobileNavCollapsed;
+  }
 }

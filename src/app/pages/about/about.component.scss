@@ -1,0 +1,34 @@
+@import "../../../resources/_common.scss";
+
+.about {
+  &-section {
+    padding: 0 1em;
+    width: 50%;
+
+    &-container {
+      display: flex;
+      flex-flow: row wrap;
+      align-content: space-between;
+      justify-content: space-between;
+    }
+  }
+  &-description {
+    font-size: 1.5em;
+  }
+}
+
+.section-container {
+  h1 {
+    color: $offwhite;
+  }
+  
+  div[class*="section-"].single-section {
+    margin: 2em 0;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .about-section {
+      width: 100%;
+  }
+}

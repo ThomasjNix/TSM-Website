@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { CommonPageComponent } from './pages/common-page/common-page.component';
 import { AboutSectionComponent } from './pages/about/about-section/about-section.component';
+import { FooterComponent } from './footer/footer.component';
 
 const routes = [
     {path: '', redirectTo: '/about', pathMatch: 'full'},
@@ -29,7 +30,8 @@ const routes = [
     BookingComponent,
     UpcomingShowsComponent,
     CommonPageComponent,
-    AboutSectionComponent
+    AboutSectionComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

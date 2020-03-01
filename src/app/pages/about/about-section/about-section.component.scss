@@ -5,7 +5,13 @@
   border: 2px solid lighten($bgblack, 25%);
   background-color: black;
   padding: 1em; 
+  min-height: 25em;
   .image {
+    align-self: center;
+    &.story {
+        margin: 0 auto;
+    }
+    
     img {
       width: 100%;
       border: 2px solid $offwhite;
@@ -13,9 +19,18 @@
   }
   
   .descriptions {
+    h3 {
+      color: white;
+    }
     p {
       font-style: italic;
       font-size: 1.5em;  
+      text-align: left;
+      
+      &.band-role {
+        color: $offwhite;
+        text-align: center;
+      }
     }
   }
 }

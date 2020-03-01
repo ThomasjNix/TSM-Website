@@ -1,8 +1,19 @@
-<div class="row single-about-section" *ngIf="allDetailsAvailable()">
+<div class="row single-about-section" *ngIf="allDetailsAvailable() && name !== 'Our Story'">
   <div class="col-xs-4 col-sm-6 col-xl-3 image">
     <img [src]="imageUrl" alt="Image of {{ name }}">
   </div>
   <div class="col-xs-8 col-xl-9 descriptions">
+    <h3>{{ name }}</h3>
+    <p class="band-role" *ngIf="bandRole">{{ bandRole }}</p>
+    <p>{{ description }}</p>
+  </div>
+</div>
+
+<div class="row single-about-section" *ngIf="allDetailsAvailable() && name === 'Our Story'">
+  <div class="col-xs-12 image story">
+    <img class="story" [src]="imageUrl" alt="Image of {{ name }}">
+  </div>
+  <div class="col-xs-12 descriptions">
     <h3>{{ name }}</h3>
     <p>{{ description }}</p>
   </div>

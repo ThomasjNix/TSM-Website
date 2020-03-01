@@ -1,7 +1,7 @@
 @import "../../resources/_common.scss";
 
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   border-top: 2px solid $crimson;
   background-color: darken($bgblack, 5%);
@@ -9,4 +9,34 @@
   padding: 1em;
   font-size: 1.5em;
   text-align: center;
+}
+
+.social {
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  
+  span {
+    color: white;
+  }
+  
+  img {
+    margin: 0 1em;
+  }
+}
+
+@media screen and (max-width: $medium) {
+  .footer {
+    padding: 0;
+    img {
+      width: 10em;
+    }
+    
+    .social {
+      img {
+        width: 2em;
+      }
+    }
+  }
 }
